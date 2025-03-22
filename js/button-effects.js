@@ -10,14 +10,4 @@ document.addEventListener("DOMContentLoaded", function () {
             button.style.boxShadow = "0 0 20px rgba(76, 175, 80, 0.8)";
         });
     });
-
-    // Rotate Effect (अब क्लिक करने पर रोटेट होगा)
-    document.querySelectorAll(".rotate-box").forEach(box => {
-        box.addEventListener("click", function () {
-            this.style.transform = "rotate(360deg)";
-            setTimeout(() => {
-                this.style.transform = "rotate(0deg)";
-            }, 500);
-        });
-    });
 });
