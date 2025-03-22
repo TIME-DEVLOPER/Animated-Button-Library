@@ -15,6 +15,11 @@
     box-shadow: 0 0 20px rgba(76, 175, 80, 0.8);
 }
 
+@keyframes rotateAnimation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 .rotate-box {
     width: 100px;
     height: 100px;
@@ -25,10 +30,5 @@
     color: white;
     font-weight: bold;
     border-radius: 10px;
-    transition: transform 0.5s ease-in-out;
-    cursor: pointer;
-}
-
-.rotate-box:hover {
-    transform: rotate(360deg);
+    animation: rotateAnimation 2s linear infinite;
 }
