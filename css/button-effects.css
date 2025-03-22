@@ -29,5 +29,6 @@
 }
 
 .rotate-box:hover {
+    cursor: pointer;
     transform: rotate(360deg);
 }
