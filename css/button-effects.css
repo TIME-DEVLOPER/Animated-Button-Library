@@ -14,3 +14,20 @@
 .btn-glow:hover {
     box-shadow: 0 0 20px rgba(76, 175, 80, 0.8);
 }
+/* 🔥 Rotate Effect 🔥 */
+.rotate-box {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.rotate-box:hover {
+    transform: rotate(360deg);
+}
