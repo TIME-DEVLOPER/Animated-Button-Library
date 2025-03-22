@@ -11,3 +11,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+//  Ripple Effect JS 
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".btn-ripple").forEach(button => {
+        button.addEventListener("click", function (e) {
+            let x = e.clientX - button.offsetLeft;
+            let y = e.clientY - button.offsetTop;
+            let ripple = document.createElement("span");
+            ripple.style.left = `${x}px`;
+            ripple.style.top = `${y}px`;
+            this.appendChild(ripple);
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+    });
+});
