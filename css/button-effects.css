@@ -26,8 +26,9 @@
     font-weight: bold;
     border-radius: 10px;
     transition: transform 0.5s ease-in-out;
+    cursor: pointer;
 }
+
 .rotate-box:hover {
-    cursor: pointer; 
-     background-color: #000;
+    transform: rotate(360deg);
 }
