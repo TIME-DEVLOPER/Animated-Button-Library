@@ -1,2 +1,2 @@
 # animated-button-library
-this library fir animated button
+this library for animated button
