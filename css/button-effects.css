@@ -1,4 +1,4 @@
-/* 🔥 Glow Button Effect 🔥 */
+
 .btn-glow {
     background-color: #4CAF50;
     border: none;
@@ -14,7 +14,7 @@
 .btn-glow:hover {
     box-shadow: 0 0 20px rgba(76, 175, 80, 0.8);
 }
-/* 🔥 Rotate Effect 🔥 */
+
 .rotate-box {
     width: 100px;
     height: 100px;
