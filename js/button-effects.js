@@ -10,3 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+// 🔥 Rotate Effect JS 🔥
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".rotate-box").forEach(box => {
+        box.addEventListener("click", function () {
+            this.style.transform = "rotate(360deg)";
+            setTimeout(() => {
+                this.style.transform = "rotate(0deg)";
+            }, 500);
+        });
+    });
+});
