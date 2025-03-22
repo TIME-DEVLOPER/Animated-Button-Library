@@ -11,24 +11,33 @@
     border-radius: 5px;
 }
 
-.btn-glow:hover {
-    box-shadow: 0 0 20px rgba(76, 175, 80, 0.8);
-}
-
-@keyframes rotateAnimation {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.rotate-box {
-    width: 100px;
+.rotate-box{
     height: 100px;
-    background-color: #4CAF50;
+    width: 100px;
+    background: #000;
+    border-radius: 10px;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-weight: bold;
+}
+
+.rotate-box:hover{
+    height: 100px;
+    width: 100px;
+    background: #000;
     border-radius: 10px;
-    animation: rotateAnimation 2s linear infinite;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate 2s infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
