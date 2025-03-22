@@ -29,5 +29,5 @@
 }
 .rotate-box:hover {
     cursor: pointer; 
-    transform: rotate(60deg);
+     background-color: #000;
 }
