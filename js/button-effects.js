@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Rotate Effect
+    // Rotate Effect (अब क्लिक करने पर रोटेट होगा)
     document.querySelectorAll(".rotate-box").forEach(box => {
         box.addEventListener("click", function () {
             this.style.transform = "rotate(360deg)";
@@ -21,4 +21,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
