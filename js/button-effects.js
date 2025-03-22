@@ -1,5 +1,6 @@
-// 🔥 Glow Effect JS 🔥
+// 🔥 Glow & Rotate Effect JS 🔥
 document.addEventListener("DOMContentLoaded", function () {
+    // Glow Effect
     let buttons = document.querySelectorAll(".btn-glow");
     buttons.forEach(button => {
         button.addEventListener("mouseover", () => {
@@ -9,9 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
             button.style.boxShadow = "0 0 20px rgba(76, 175, 80, 0.8)";
         });
     });
-});
-// 🔥 Rotate Effect JS 🔥
-document.addEventListener("DOMContentLoaded", function () {
+
+    // Rotate Effect
     document.querySelectorAll(".rotate-box").forEach(box => {
         box.addEventListener("click", function () {
             this.style.transform = "rotate(360deg)";
@@ -21,3 +21,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
