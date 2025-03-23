@@ -6,7 +6,7 @@
     padding: 15px 32px;
     text-align: center;
     font-size: 16px;
-    cursor: pointer;
+  
     transition: box-shadow 0.3s ease-in-out;
     border-radius: 5px;
 }
@@ -15,6 +15,7 @@
     100% { transform: rotate(360deg); }
 }
 .btn-glow:hover{
+      cursor: pointer;
     animation: rotateEffect 7s infinite;
 }
 .rotate-box{
