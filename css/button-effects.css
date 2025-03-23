@@ -6,7 +6,7 @@
   cursor: pointer;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
-}
+}https://github.com/TIME-DEVLOPER/animated-button-library/edit/main/css/button-effects.css
 
 /* Glow Effect */
 .btn.glow {
@@ -72,33 +72,30 @@
 .btn {
   padding: 12px 24px;
   font-size: 18px;
-  border: 3px solid transparent;
+  border: 3px solid #ff5733;
   cursor: pointer;
   border-radius: 8px;
   background: transparent;
-  color: white;
+  color: #ff5733;
   font-weight: bold;
   position: relative;
   overflow: hidden;
   transition: 0.3s;
 }
 
-/* Border Animation */
-.btn.pulse {
-  border-image: linear-gradient(45deg, #ff5733, #33ff57);
-  border-image-slice: 1;
-  animation: borderPulse 1.5s infinite alternate;
-}
-
-/* Dual Color Pulse Effect */
+/* Border Pulse Effect */
 @keyframes borderPulse {
   0% {
-    box-shadow: 0 0 5px #ff5733, 0 0 5px #33ff57;
+    box-shadow: 0 0 5px #ff5733;
   }
   50% {
-    box-shadow: 0 0 20px #ff5733, 0 0 20px #33ff57;
+    box-shadow: 0 0 20px #ff5733;
   }
   100% {
-    box-shadow: 0 0 5px #ff5733, 0 0 5px #33ff57;
+    box-shadow: 0 0 5px #ff5733;
   }
+}
+
+.btn.pulse {
+  animation: borderPulse 1.5s infinite alternate;
 }
