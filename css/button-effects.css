@@ -95,7 +95,7 @@
     box-shadow: 0 0 5px #ff5733;
   }
 }
-.btn.pulse{
+.btnn.pulse{
   animation: borderPulse 1.5s infinite alternate;
 }
 
