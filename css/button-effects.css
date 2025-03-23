@@ -65,6 +65,6 @@
     color: white;
     font-weight: bold;
     border-radius: 10px;
-    animation: rotateAnim 2s linear infinite; /* 🔄 Continuous Rotation */
+    animation: rotateAnim 10s linear infinite; /* 🔄 Continuous Rotation */
 }
 
