@@ -10,6 +10,11 @@
     transition: box-shadow 0.3s ease-in-out;
     border-radius: 5px;
 }
+.btn-hover{
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 .rotate-box{
     height: 100px;
