@@ -50,19 +50,21 @@
 .btn.ripple:active::after {
   transform: scale(2);
 }
+@keyframes rotateAnim {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 .rotate-box {
     width: 100px;
     height: 100px;
-    background-color: #4CAF50;
+    background-color: #ff5722;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-weight: bold;
     border-radius: 10px;
-    transition: transform 0.5s ease-in-out;
-    cursor: pointer;
+    animation: rotateAnim 2s linear infinite; /* 🔄 Continuous Rotation */
 }
-.rotate-box:hover {
-    transform: rotate(360deg); 
-}
+
