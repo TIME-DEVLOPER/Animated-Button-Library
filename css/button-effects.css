@@ -68,3 +68,37 @@
     animation: rotateAnim 10s linear infinite; /* 🔄 Continuous Rotation */
 }
 
+/* Basic Button Styling */
+.btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: 3px solid transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+/* Border Animation */
+.btn.pulse {
+  border-image: linear-gradient(45deg, #ff5733, #33ff57);
+  border-image-slice: 1;
+  animation: borderPulse 1.5s infinite alternate;
+}
+
+/* Dual Color Pulse Effect */
+@keyframes borderPulse {
+  0% {
+    box-shadow: 0 0 5px #ff5733, 0 0 5px #33ff57;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff5733, 0 0 20px #33ff57;
+  }
+  100% {
+    box-shadow: 0 0 5px #ff5733, 0 0 5px #33ff57;
+  }
+}
