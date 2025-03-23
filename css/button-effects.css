@@ -1,4 +1,8 @@
-
+.btn-glow:hover{
+      cursor: pointer;
+    background-color: #000;
+    animation: rotateEffect 7s infinite;
+}
 .btn-glow {
     background-color: #4CAF50;
     border: none;
@@ -14,11 +18,7 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-.btn-glow:hover{
-      cursor: pointer;
-    background-color: #000;
-    animation: rotateEffect 7s infinite;
-}
+
 .rotate-box{
     height: 100px;
     width: 100px;
