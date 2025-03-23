@@ -69,18 +69,19 @@
 }
 
 /* Basic Button Styling */
-.btn {
+.btn-pulse{
   padding: 12px 24px;
   font-size: 18px;
   border: 3px solid #ff5733;
   cursor: pointer;
   border-radius: 8px;
   background: transparent;
-  color: #ff5733;
+  color: #000;
   font-weight: bold;
   position: relative;
   overflow: hidden;
   transition: 0.3s;
+   animation: borderPulse 1.5s infinite alternate;
 }
 
 /* Border Pulse Effect */
@@ -96,6 +97,3 @@
   }
 }
 
-.btn.pulse {
-  animation: borderPulse 1.5s infinite alternate;
-}
