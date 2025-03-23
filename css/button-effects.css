@@ -10,12 +10,14 @@
     transition: box-shadow 0.3s ease-in-out;
     border-radius: 5px;
 }
-.btn-hover{
-    100%{
-        transform: rotate(360deg);
-    }
-}
 
+@keyframes rotateEffect {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.btn-hover {
+    animation: rotateEffect 1s linear;
+}
 .rotate-box{
     height: 100px;
     width: 100px;
